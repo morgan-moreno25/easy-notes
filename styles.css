@@ -1,0 +1,80 @@
+:root {
+    --main-background: #f6e0ff;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: var(--main-background);
+}
+#app {
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 30vh 60vh;
+    grid-template-areas:
+        ". header ."
+        ". form ."
+        ". notes .";
+    justify-items: center;
+    align-items: center; 
+}
+#main-header {
+    grid-area: header;
+}
+#main-header > h1 {
+    font-weight: bolder;
+}
+#form-container {
+    height: 100%;
+    width: 100%;
+    grid-area: form;
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+#note-form {
+    text-align: center;
+}
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 150px;
+}
+#notes-container {
+    grid-area: notes;
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.note {
+    height: 200px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+        "note note"
+        "edit del";
+    margin: 5px;
+}
+.note > p {
+    grid-area: note;
+    padding: 5px;
+    font-weight: bold;
+}
+.note > .edit {
+    grid-area: edit;
+}
+.note > .del {
+    grid-area: del;
+}
