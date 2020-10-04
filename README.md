@@ -1,15 +1,27 @@
 # Easy Notes
 
+
+## What
+
 This project is a simple application that allows the user to create, update, and delete notes from their browser's local storage.
 
-# Overview
+## Technology
 
-In this project I created a skeleton HTML document for the page and use JavaScript to dynamically render content and data to the page.
+  - HTML
+  - CSS
+  - JavaScript
+  - Bootstrap
+  
+## What I Learned
 
-I attempted to use the MVC design pattern using ES6 classes. 
+From completing this project I gained experience with the following:
 
-The NotesView class contains the different DOM elements that are dynamically rendered to the webpage.
+  - ES6 Classes
+  - MVC Design Pattern
+  - Bootstrap Component Library
+  - LocalStorage as a storage system
+  - Dynamically rendering content using JavaScript
+  
+## LIVE
 
-The NotesController class contains the CRUD methods to feed the view class with the data it needs.
-
-The NotesModel is embedded inside of the NotesController as the attribute NOTES.
+You can check out a live demo of this application [here](https://morgan-moreno25.github.io/easy-notes/)
